@@ -1,0 +1,111 @@
+@import "../general/reset.scss";
+@import "../general/style-general.scss";
+@import "../general/variables.scss";
+
+.contenido-pestanas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: $margin-top;
+
+    .titulo-pestanas {
+        width: 90%;
+        height: 40px;
+        position: absolute;
+        text-align: center;
+        font-size: 28px;
+        color: $color-letra;
+        margin: auto;
+        padding: auto;
+    }
+
+    .extension-pestanas {
+        text-align: left;
+        width: 80%;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .extension {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+
+    .lifting-pestanas {
+        text-align: left;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .lifting {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+
+    .perfilado-cejas {
+        text-align: left;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .cejas {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+
+    .perfilado-tine {
+        text-align: left;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .tinte {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+
+@media only screen and (min-width: 360px) and (max-width:767px) {
+
+    .contenido-pestanas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: $padding;
+        font-size: 18px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }   
+}
+
+
+/* MEDIA QUERY DESKTOP Y TABLET */
+
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+
+    .contenido-pestanas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: $padding;
+        font-size: 23px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

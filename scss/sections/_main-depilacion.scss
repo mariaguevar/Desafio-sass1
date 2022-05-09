@@ -1,0 +1,85 @@
+@import "../general/reset.scss";
+@import "../general/style-general.scss";
+@import "../general/variables.scss";
+
+.contenido-depilacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: $margin-top;
+
+    .titulo-depilacion {
+        width: 90%;
+        height: 40px;
+        position: absolute;
+        text-align: center;
+        font-size: 28px;
+        color: $color-letra;
+        margin: auto;
+        padding: auto;
+    }
+
+    .depilacion-cera {
+        text-align: left;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .cera {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+
+    .depilacion-definitiva {
+        text-align: left;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .definitiva {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+
+@media only screen and (min-width: 360px) and (max-width:767px) {
+
+    .contenido-depilacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: $padding;
+        font-size: 18px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+/* MEDIA QUERY DESKTOP Y TABLET */
+
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+
+    .contenido-depilacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: $padding;
+        font-size: 23px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+@import "../general/reset.scss";
+@import "../general/style-general.scss";
+@import "../general/variables.scss";
+
+.contenido-unas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: $margin-top;
+
+    .titulo-unas {
+        width: 90%;
+        height: 40px;
+        position: absolute;
+        text-align: center;
+        font-size: 28px;
+        color: $color-letra;
+        margin: auto;
+        padding: auto;
+    }
+
+    .unas-esculpidas {
+        text-align: left;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .esculpidas {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+    .pedicuria {
+        text-align: left;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .titulo-pedicure {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+    .manucuria {
+        text-align: left;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .manicuria-profunda {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+    .permanente {
+        text-align: left;
+        padding-left: 3%;
+        margin-top: $margin-top;
+
+        .esmaltado-permanente {
+            color: $color-letra;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+
+@media only screen and (min-width: 360px) and (max-width:767px) {
+
+    .contenido-unas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: $padding;
+        font-size: 18px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+/* MEDIA QUERY DESKTOP Y TABLET */
+
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+
+    .contenido-unas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: $padding;
+        font-size: 23px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
